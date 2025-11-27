@@ -4,4 +4,7 @@ venv/
 
 # Arquivos de cache e outros
 __pycache__/
-*.pyc
+*.pyc 
+
+#Token do Bot
+.env
