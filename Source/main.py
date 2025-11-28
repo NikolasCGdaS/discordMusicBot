@@ -20,7 +20,8 @@ intents.members = True
 
 # Define as Cogs a serem carregadas
 cogsToLoad = [
-    'cogs.basicCommands'
+    'cogs.basicCommands',
+    'cogs.frequencyChecker'
 ]
 
 # Define o prefixo do bot e seus intents
