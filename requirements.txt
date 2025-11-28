@@ -2,3 +2,4 @@ discord.py
 python-dotenv
 #pip install yt-dlp youtube-search-python
 #pip install pynacl #necessário para o voice do discord.py
+#instale o ffmpeg e adicione ao PATH do sistema operacional

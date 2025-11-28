@@ -26,7 +26,7 @@ class CholaBot(commands.Bot):
 
     async def setup_hook(self):
         # Carrega o módulo musiccontroller
-        await self.load_extension("music.musiccontroller")
+        await self.load_extension("module.music.musiccontroller")
         print("Setup concluído.")
 
     async def on_ready(self):
