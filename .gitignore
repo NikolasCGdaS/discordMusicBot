@@ -11,3 +11,6 @@ __pycache__/
 
 #logs de execução
 discordBot.log
+
+#logs de conexão de chamadas
+channelMovementLog.json
