@@ -7,4 +7,11 @@ __pycache__/
 *.pyc 
 
 #Token do Bot
+<<<<<<< HEAD
 .env
+=======
+.env
+
+#logs de execução
+discordBot.log
+>>>>>>> ba0f5733eeb4798e70f7ed3979ef1d4fd18d17a6
