@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 
 # Define a classe Cog de comandos básicos
-class BasicCommands(commands.Cog):
+class BasicService(commands.Cog):
     # Instância do bot
     def __init__(self, bot):
         self.bot = bot
@@ -19,4 +19,4 @@ class BasicCommands(commands.Cog):
 
 # Função de configuração para carregar o Cog
 async def setup(bot):
-    await bot.add_cog(BasicCommands(bot))
+    await bot.add_cog(BasicService(bot))

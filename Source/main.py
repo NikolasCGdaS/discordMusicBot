@@ -9,8 +9,8 @@ load_dotenv()
 botToken = os.getenv('DISCORD_TOKEN')
 
 # Verifica a existencia da pasta cogs
-if not os.path.isdir('cogs'):
-    os.mkdir('cogs')
+if not os.path.isdir('modules'):
+    os.mkdir('modules')
 
 # Definição de arquivo de logs
 logDeExecucao = logging.FileHandler(filename='discordBot.log', encoding='utf-8', mode='w')
@@ -20,8 +20,8 @@ intents.members = True
 
 # Define as Cogs a serem carregadas
 cogsToLoad = [
-    'cogs.basicCommands',
-    'cogs.frequencyChecker'
+    'modules.basicCommands.basicService',
+    'modules.frequencyChecker.FrequencyControl'
 ]
 
 # Define o prefixo do bot e seus intents
