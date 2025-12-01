@@ -1,6 +1,5 @@
-from chatbot import CholaBot
+from CholaBot import CholaBot
 import logging
-import os
 
 # Define o arquivo que trará os logs de execução
 logDeExecucao = logging.FileHandler(
