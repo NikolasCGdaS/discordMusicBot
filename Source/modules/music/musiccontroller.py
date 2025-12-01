@@ -8,10 +8,9 @@ class MusicController(commands.Cog):
         self.service = MusicService()
 
     @commands.command(name="play")
-    async def play(self, ctx, *, url: str):
-        """Toca uma música pelo link."""
-        await self.service.play_music(ctx, url)
-
+    async def play(self, ctx, *, query: str):
+        await self.service.play_music(ctx, query)
+    
     @commands.command(name="pause")
     async def pause(self, ctx):
         await self.service.pause(ctx)
@@ -23,6 +22,15 @@ class MusicController(commands.Cog):
     @commands.command(name="stop")
     async def stop(self, ctx):
         await self.service.stop(ctx)
+    
+    @commands.command(name="queue")
+    async def queue(self, ctx):
+        await self.service.queue(ctx)
+
+    @commands.command(name="skip")
+    async def skip(self, ctx):
+        await self.service.skip(ctx)
+
 
 
 async def setup(bot):
